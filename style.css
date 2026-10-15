@@ -1,0 +1,1190 @@
+/*base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f7fbff;
+    color: #111111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    color: #222222;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* navbar */
+
+nav {
+    padding: 12px 4%;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    border: 1px solid #d8e9f7 !important;
+    border-radius: 22px;
+    margin: 18px 3% 0;
+    padding: 10px 25px;
+    box-shadow: 0 6px 25px rgba(55, 145, 205, 0.12);
+}
+
+.navbar-brand img {
+    width: 170px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar .nav-link {
+    color: #111111 !important;
+    font-weight: 600;
+    padding: 10px 15px !important;
+    border-radius: 18px;
+    transition: 0.25s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #1677b8 !important;
+    background-color: #e8f5ff;
+}
+
+.navbar .nav-link.active {
+    color: #1677b8 !important;
+    background-color: #e8f5ff;
+}
+
+
+/* desplegable */
+
+.navbar .dropdown-menu {
+    border: 1px solid #d8e9f7 !important;
+    border-radius: 16px;
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 28px rgba(40, 120, 180, 0.14);
+    padding: 8px;
+}
+
+.navbar .dropdown-item {
+    color: #111111 !important;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.2s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #dff2ff !important;
+    color: #1677b8 !important;
+}
+
+
+/* Botón hamburguesa */
+
+.navbar-toggler {
+    border: 2px solid #4fa9d8 !important;
+    border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%234fa9d8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
+/* portada */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 430px;
+    margin: 55px auto 45px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ffffff 0%, #eaf6ff 100%);
+    border: 1px solid #d8edf9;
+    border-radius: 30px;
+    box-shadow: 0 12px 35px rgba(52, 147, 201, 0.13);
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-subtitle {
+    color: #1680bd !important;
+    font-size: 15px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #111111;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.hero-subtitle) {
+    color: #222222 !important;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 14px;
+    background-color: #4fa9d8;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.hero-button:hover {
+    background-color: #267eaf;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(38, 126, 175, 0.2);
+}
+
+.hero-button.secondary {
+    background-color: #ffffff;
+    color: #111111 !important;
+    border: 2px solid #f0a8b8;
+}
+
+.hero-button.secondary:hover {
+    background-color: #f8dce2;
+    color: #111111 !important;
+}
+
+.hero-decoration {
+    width: 35%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.math-symbol {
+    position: absolute;
+    color: #4fa9d8;
+    font-size: 75px;
+    font-weight: bold;
+    opacity: 0.18;
+}
+
+.math-symbol:nth-child(1) {
+    top: 20px;
+    left: 30px;
+}
+
+.math-symbol:nth-child(2) {
+    top: 130px;
+    right: 20px;
+}
+
+.math-symbol:nth-child(3) {
+    bottom: 10px;
+    left: 80px;
+}
+
+.math-symbol:nth-child(4) {
+    top: 70px;
+    left: 150px;
+}
+
+
+/* TÍTULOS DE SECCIÓN */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #e28c9e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    color: #111111;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.section-title p {
+    color: #333333 !important;
+    font-size: 17px;
+}
+
+
+/* seccion del equipo */
+
+.team-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 80px;
+}
+
+.carousel-1 {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    border-radius: 24px;
+}
+
+.group-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: spin 25s infinite linear;
+    padding-right: 20px;
+}
+
+.card-1 {
+    flex: 0 0 190px;
+    width: 190px;
+    height: 230px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 6px;
+    border: 1px solid #d9edf9;
+    box-shadow: 0 7px 22px rgba(52, 147, 201, 0.14);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.card-1:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(52, 147, 201, 0.22);
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+
+/* =========================================================
+   CALCULADORAS
+   ========================================================= */
+
+.calculadoras-section {
+    padding: 75px 8%;
+    text-align: center;
+    background-color: #edf8ff;
+    border-top: 1px solid #d8edf9;
+    border-bottom: 1px solid #d8edf9;
+}
+
+.calculadoras-section .section-title {
+    margin-bottom: 40px;
+}
+
+.calculadoras-section .section-title span {
+    color: #e28c9e;
+}
+
+.calculadoras-section .section-title h2 {
+    color: #111111;
+}
+
+.calculadoras-section .section-title p {
+    color: #333333;
+}
+
+.calculadoras-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.calculadora-card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 30px 25px;
+    border: 1px solid #d8edf9;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(52, 147, 201, 0.11);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculadora-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(52, 147, 201, 0.18);
+}
+
+.calculadora-card h3 {
+    color: #111111;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.calculadora-card p {
+    color: #222222;
+    min-height: 70px;
+    line-height: 1.5;
+}
+
+.calculadora-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 22px;
+    background-color: #4fa9d8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.calculadora-card a:hover {
+    background-color: #267eaf;
+    transform: translateY(-2px);
+}
+
+
+/*   PAGINA ERRORES.HTML    */
+
+.errores-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #f7fbff;
+    min-height: 70vh;
+}
+
+.errores-section .section-title {
+    margin-bottom: 40px;
+}
+
+.errores-section .section-title span {
+    color: #e28c9e;
+}
+
+.errores-section .section-title h2 {
+    color: #111111;
+}
+
+.errores-section .section-title p {
+    color: #333333;
+}
+
+.errores-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.error-card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 22px 25px;
+    border: 1px solid #d8edf9;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(52, 147, 201, 0.11);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.error-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(52, 147, 201, 0.18);
+}
+
+.error-card h3 {
+    color: #111111;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.error-card p {
+    color: #222222;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.error-info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transition: max-height 0.45s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.error-card.active .error-info {
+    max-height: 350px;
+    opacity: 1;
+    margin-top: 18px;
+}
+
+.error-card.active {
+    transform: translateY(-5px);
+}
+
+.formula {
+    margin: 18px 0;
+    padding: 12px;
+    background-color: #e7f5ff;
+    color: #1677b8;
+    border: 1px solid #cceafa;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+
+
+.card-2,
+.card-3 {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 14px 24px 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: justify;
+    transition: transform 200ms, background 200ms;
+    background: #ffffff;
+    color: #1677b8;
+    border: 2px solid #4fa9d8;
+    box-shadow: none;
+}
+
+.card-2:hover,
+.card-3:hover {
+    transform: translateY(-2px);
+    background-color: #e8f6ff;
+}
+
+
+
+.neon-cyan,
+.neon-morado,
+.neon-dorado,
+.neon-rojo {
+    color: #111111;
+    font-family: sans-serif;
+    text-shadow: none;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.neon-cyan {
+    color: #1677b8;
+}
+
+.neon-morado {
+    color: #4f8fb8;
+}
+
+.neon-dorado {
+    color: #e28c9e;
+}
+
+.neon-rojo {
+    color: #d86f86;
+}
+
+
+/*  Calculadora bisección  */
+
+.calculadora {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #cceafa;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(52, 147, 201, 0.12);
+    color: #111111;
+}
+
+.calculadora h2 {
+    text-align: center;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #333333 !important;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.campo label {
+    color: #111111;
+    font-weight: 700;
+}
+
+.campo input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #b9dcec;
+    background: #f8fcff;
+    color: #111111;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.campo input:focus {
+    border-color: #4fa9d8;
+    box-shadow: 0 0 0 3px rgba(79, 169, 216, 0.14);
+}
+
+.formulario button {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #4fa9d8;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.formulario button:hover {
+    background: #267eaf;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(38, 126, 175, 0.18);
+}
+
+.resultado {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #f5fbff;
+    border: 1px solid #cceafa;
+    box-sizing: border-box;
+}
+
+.resultado h3 {
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.tabla-container {
+    width: 100%;
+    margin-top: 30px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#tablaBiseccion {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+#tablaBiseccion th {
+    background: #4fa9d8;
+    color: #ffffff;
+    padding: 12px;
+    white-space: nowrap;
+}
+
+#tablaBiseccion td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dcecf5;
+    color: #111111;
+    white-space: nowrap;
+}
+
+#tablaBiseccion tr:hover {
+    background: #eef8fd;
+}
+
+#mensaje {
+    margin-top: 20px;
+    color: #d86f86;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+
+/* Botones de funciones */
+
+.botones-funciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.botones-funciones button {
+    padding: 8px 14px;
+    border: 1px solid #8dc8e7;
+    border-radius: 9px;
+    background: #eef8fd;
+    color: #1677b8;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.botones-funciones button:hover {
+    background: #4fa9d8;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.funcion-campo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.funcion-campo input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* pie de pagina */
+
+footer {
+    background: linear-gradient(135deg, #dff3ff, #eaf7ff);
+    color: #111111;
+    padding: 45px 0 25px;
+    display: flex;
+    margin-top: auto;
+    border-top: 1px solid #cceafa;
+}
+
+.container-1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+footer h3,
+footer h4,
+footer h5 {
+    color: #111111;
+}
+
+footer p,
+footer li {
+    color: #222222;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.a-1 {
+    color: #1677b8;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.a-1:hover {
+    color: #d86f86 !important;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.red-social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    color: #ffffff !important;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.red-social i {
+    font-size: 19px;
+}
+
+.facebook {
+    background-color: #4fa9d8;
+    box-shadow: 0 5px 15px rgba(79, 169, 216, 0.25);
+}
+
+.instagram {
+    background-color: #e28c9e;
+    box-shadow: 0 5px 15px rgba(226, 140, 158, 0.25);
+}
+
+.youtube {
+    background-color: #267eaf;
+    box-shadow: 0 5px 15px rgba(38, 126, 175, 0.25);
+}
+
+.red-social:hover {
+    transform: scale(1.1);
+    color: #ffffff !important;
+}
+
+
+/* aca empieza el responsive, este es de tablet */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        margin: 12px 2%;
+        padding: 8px 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+        margin-top: 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-decoration {
+        width: 100%;
+        height: 180px;
+        margin-top: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .calculadora {
+        width: 94%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario button {
+        grid-column: auto;
+    }
+
+    .calculadora h2 {
+        font-size: 24px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .botones-funciones {
+        gap: 6px;
+    }
+
+    .botones-funciones button {
+        flex: 1 1 auto;
+        min-width: 60px;
+    }
+
+    .row-1 {
+        gap: 25px;
+    }
+}
+
+
+/* responsive de celulares */
+
+@media (max-width: 480px) {
+
+    .navbar-brand img {
+        width: 140px;
+    }
+
+    .hero {
+        width: 94%;
+        padding: 30px 18px;
+        border-radius: 22px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-text > p:not(.hero-subtitle) {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .hero-decoration {
+        height: 140px;
+    }
+
+    .math-symbol {
+        font-size: 55px;
+    }
+
+    .team-section {
+        width: 94%;
+    }
+
+    .card-1 {
+        flex-basis: 160px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .calculadoras-section,
+    .errores-section {
+        padding: 55px 5%;
+    }
+
+    .calculadora-card,
+    .error-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .calculadora {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    .calculadora h2 {
+        font-size: 21px;
+    }
+
+    .descripcion {
+        font-size: 13px;
+    }
+
+    .campo input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .formulario {
+        gap: 15px;
+    }
+
+    .resultado {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    #tablaBiseccion th,
+    #tablaBiseccion td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .row-1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+/* para bisseccion abierta */
+
+.ejercicios-abiertos {
+    padding: 45px 7%;
+    background: #f4f8ff;
+}
+
+.ejercicios-abiertos .section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.ejercicio-abierto {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1000px;
+    border: 1px solid #c9dcf5;
+    box-shadow: 0 5px 18px rgba(50, 100, 160, 0.10);
+}
+
+.ejercicio-abierto h3 {
+    color: #2865a8;
+    font-weight: bold;
+    border-bottom: 2px solid #f3b5d8;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.ejercicio-abierto h4 {
+    color: #467bb8;
+    margin-top: 25px;
+    font-size: 19px;
+}
+
+.funcion-ejercicio {
+    background: #e4efff;
+    color: #173d70;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pendiente-tabla {
+    background: #fff0f8;
+    padding: 15px;
+    border-radius: 10px;
+    color: #555;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .ejercicios-abiertos {
+        padding: 30px 15px;
+    }
+
+    .ejercicio-abierto {
+        padding: 20px;
+    }
+
+    .funcion-ejercicio {
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+
+/* tablas de biseccion abierta */
+
+.tabla-ejercicio {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabla-ejercicio table {
+    width: 100%;
+    min-width: 450px;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+}
+
+.tabla-ejercicio th {
+    background: #2865a8;
+    color: white;
+    padding: 14px;
+}
+
+.tabla-ejercicio td {
+    padding: 12px;
+    border: 1px solid #d5e2f2;
+}
+
+.tabla-ejercicio tbody tr:nth-child(even) {
+    background: #edf4ff;
+}
+
+.tabla-ejercicio tbody tr:hover {
+    background: #fff0f8;
+}
+
+.resultado-ejercicio {
+    background: #fff0f8;
+    border-left: 5px solid #e99ac8;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* esto es para la calculadora de newton */
+#tablaNewton {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tablaNewton th,
+#tablaNewton td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+#tablaNewton th {
+    font-weight: bold;
+}
+
+.tabla-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Misión y visión */
+
+.proposito-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 80px;
+}
+
+.proposito-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.proposito-card {
+    min-width: 0;
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid #d8edf9;
+    border-top: 4px solid #4fa9d8;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(52, 147, 201, 0.11);
+}
+
+.proposito-card.proposito-vision {
+    border-top-color: #e28c9e;
+}
+
+.proposito-card h3 {
+    color: #111111;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.proposito-card p {
+    color: #222222;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Una tarjeta debajo de otra en pantallas pequeñas */
+@media (max-width: 768px) {
+    .proposito-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proposito-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .proposito-section {
+        width: 94%;
+        margin-bottom: 55px;
+    }
+}
